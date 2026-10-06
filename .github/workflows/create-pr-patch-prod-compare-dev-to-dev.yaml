@@ -47,7 +47,7 @@ jobs:
           new_branch: patch-prod-compare-dev-to-dev-${{ steps.current_date.outputs.patch_date }}
 
       - name: create PR
-        uses: devops-infra/action-pull-request@v0.5.3
+        uses: devops-infra/action-pull-request@v1.4.0
         with:
           source_branch: patch-prod-compare-dev-to-dev-${{ steps.current_date.outputs.patch_date }}
           target_branch: dev
